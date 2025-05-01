@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website - Sidebar</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <img src="Naveed.png" alt="Logo" class="logo" width="180" height="100">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Background.html">Origin</a></li>
+                    <li><a href="Hobbies.html">Hobbies</a></li>
+                    <li><a href="Work.html">Work</a></li>
+                    <li><a href="sidebar.html">Ex</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar Section -->
+    <aside id="sidebar" class="sidebar">
+        <div id="sidebar-btn" class="sidebar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=NC8zSuC-598" target="_blank">Cricket Indoor</a></li>
+            <li><a href="https://www.youtube.com/watch?v=bBWODotZvVM" target="_blank">Cricket Outdoor</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1>Favorite Motor Vehicles</h1>
+        <div class="vehicle-cards">
+            <div class="vehicle">Mustang</div>
+            <div class="vehicle">Lamborghini</div>
+            <div class="vehicle">Audi</div>
+            <div class="vehicle">Yamaha R1</div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <a href="https://www.facebook.com/naveed.zahid.05/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/naveed_zahid05/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/naveedzahid94" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sidebar-btn').click(function() {
+                $('#sidebar').toggleClass('visible');
+            });
+        });
+    </script>
+</body>
+</html>
